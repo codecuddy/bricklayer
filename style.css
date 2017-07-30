@@ -1,0 +1,362 @@
+html,
+body,
+#home {
+    height: 100%;
+}
+.cover {
+    background: url('img/background.jpg') top left no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+}
+
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section {
+    padding: 110px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    text-shadow: 1px 1px 1px #666;
+}
+
+.navbar-inverse {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+}
+
+.initial {
+    height: 34px;
+}
+
+.center {
+    text-align: center;
+}
+
+#name {
+    font-size: 70px;
+    letter-spacing: -2.5px;
+}
+
+.jenny {
+    width: 24%;
+    border: 3px solid #ffff00;
+    border-radius: 30px/180px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#description {
+    margin: 20px;
+}
+
+.objective {
+    background: url('img/wood.jpg') top left no-repeat;
+    background-size: cover;
+}
+
+.objective-text {
+    font-size: 32px;
+    color: #000080;
+    text-shadow: 1px 1px 1px #444;
+}
+
+#codingExperience {
+    background-color: #000080;
+    color: #e6f0ff;
+    text-align: center;
+}
+
+#codingExperience a {
+    color: #ffff00;
+}
+
+#myProjectList {
+    font-size: 18px;
+}
+
+#about-me {
+    background-color: #e6f0ff;
+    color: #000080;
+}
+
+#about-me a {
+    color:  #0000ff;
+}
+
+#about-me a:hover {
+    color: #000080;
+}
+
+#education {
+    background-color: #000080;
+    color: #e6f0ff;
+    text-align: center;
+}
+
+#education small {
+    color: #e6f0ff;
+}
+
+#education.mobileShow {
+    color: #e6f0ff;
+}
+
+#education a {
+    color: #ffff00;
+}
+
+.ed-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+}
+
+.eduHeadings {
+    color: #ffff00 ;
+}
+
+#strength-title {
+    color: #fff;
+    text-shadow: none;
+    line-height: 34px;
+}
+
+#gallup {
+    background-color: #e6f0ff;
+    color: #C0C0C0;
+}
+
+#gallup a {
+    color: #000080;
+    text-shadow: .5px .5px .5px #ffff00;
+}
+
+#gallup a:hover {
+    color: #ffff00;
+    text-shadow: .5px .5px .5px #000080;
+}
+
+#references {
+    background-color: #000080;
+    color: #e6f0ff;
+}
+
+.img-circle.reference-pic {
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+    border: 3px solid #e6f0ff;
+}
+
+.ref-email {
+    color: #ffff00;
+}
+
+.ref-email:hover {
+    color: #e6f0ff;
+}
+
+.ref-info {
+    color: #e6f0ff;
+    text-decoration: underline;
+}
+
+.ref-info:hover {
+    color: #ffff00;
+}
+
+.img-circle {
+    height: 70px;
+    width: 70px;
+}
+
+#contact_info {
+    background: url('img/old-newspaper.jpg') bottom right no-repeat;
+    background-size: cover;
+    color: #000080;
+}
+
+#contact_info .container {
+    padding: 40px;
+}
+
+.phone {
+    color: #ffff00;
+}
+
+.phone:hover {
+    color: #e6f0ff;
+}
+
+#number {
+    color: #000080;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+blockquote {
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 24px;
+    color: navy;
+} 
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000080;
+    text-shadow: 1px 1px 1px #fff;
+    margin-top: 20px;
+}
+
+#clickForMore {
+    text-transform: capitalize;
+    color: navy;
+    font-style: italic;
+    
+}
+.aboutHeader {
+    color: navy;
+}
+.aboutHeadings {
+    text-decoration: underline;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.col-sm-2 {
+    text-align: center;
+    
+} 
+.col-sm-2 h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.col-sm-2 p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.col-sm-2 a {
+    color: #000080;
+    text-decoration: none;
+}
+
+.col-sm-2 a:hover {
+    color: #ffff00;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.ed-content {
+    text-align: left;
+}
+
+.col-sm-3 {
+    padding: 20px 12px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, Times, serif;
+}
+
+footer a {
+    color: silver;
+}
+
+/* Scrolling */
+
+a[ id= "home" ]:target ~ #home section.cover {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+a[ id= "why-us" ]:target ~ #main section.panel {
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}
+a[ id= "contacto" ]:target ~ #main article.panel {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}
+
+/* Media Queries */             /*568 is iphone width*/
+
+@media only screen 
+and ( max-width: 568px ) {
+    
+    .cover {
+        height: 100%;
+    }
+    
+    #name {
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    
+    .jenny {
+        width: 50%;
+    }
+    
+    .objective-text {
+        font-size: 22px;
+    }
+    
+    section {
+        padding: 50px 0;
+    }
+    
+    #references {
+    background-color: #000080;
+    color: #e6f0ff;
+    }
+    
+    #number {
+    font-size: 22px;
+    }
+
+    .ed-content {
+        text-align: center;
+    }
+    
+    .ed-content .collapse {
+        text-align: left;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    
+    #number {
+    font-size: 18px;
+    }
+}
