@@ -1,10 +1,11 @@
 html,
 body,
+
 #home {
     height: 100%;
 }
 .cover {
-    background: url('img/background.jpg') top left no-repeat;
+    background: #D5232E;
     background-size: cover;
     display: table;
     width: 100%;
@@ -12,7 +13,7 @@ body,
 
 .cover-text {
     text-align: center;
-    color: white;
+    color: black;
     display: table-cell;
     vertical-align: middle;
 }
@@ -36,48 +37,80 @@ section {
 }
 
 .initial {
-    height: 34px;
+    height: 30px;
 }
 
 .center {
     text-align: center;
 }
 
-#name {
-    font-size: 70px;
+#headline {
+    margin: 40px;
+    font-size: 50px;
     letter-spacing: -2.5px;
 }
 
-.jenny {
-    width: 24%;
-    border: 3px solid #ffff00;
+#doSpaceIcon {
+    width: 300px;
+    height: 120px;
+    border: 3px solid #181818;
     border-radius: 30px/180px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-right: 5px;
+}
+
+#bricklayerIcon {
+    width: 300px;
+    height: 120px;
+    border: 3px solid #181818;
+    border-radius: 30px/180px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 5px;
+
 }
 
 #description {
     margin: 20px;
 }
 
+#description a {
+    color: black;
+    text-decoration: underline;
+}
+
+#description a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .objective {
-    background: url('img/wood.jpg') top left no-repeat;
+    background: #F3C32E;
     background-size: cover;
 }
 
-.objective-text {
+.objective-heading {
     font-size: 32px;
     color: #000080;
     text-shadow: 1px 1px 1px #444;
 }
 
-#codingExperience {
-    background-color: #000080;
+.objective-text {
+    font-size: 24px;
+    color: #000080;
+    text-shadow: 1px 1px 1px #444;
+}
+
+#firstDays {
+    background: #1AA050;
     color: #e6f0ff;
     text-align: center;
 }
 
-#codingExperience a {
+#firstDays a {
     color: #ffff00;
 }
 
@@ -85,34 +118,34 @@ section {
     font-size: 18px;
 }
 
-#about-me {
-    background-color: #e6f0ff;
+#browserCode {
+    background: #2482C6;
     color: #000080;
 }
 
-#about-me a {
+#browserCode a {
     color:  #0000ff;
 }
 
-#about-me a:hover {
+#browserCode a:hover {
     color: #000080;
 }
 
-#education {
-    background-color: #000080;
+#downloads {
+    background: #D5232E;
     color: #e6f0ff;
     text-align: center;
 }
 
-#education small {
+#downloads small {
     color: #e6f0ff;
 }
 
-#education.mobileShow {
+#downloads.mobileShow {
     color: #e6f0ff;
 }
 
-#education a {
+#downloads a {
     color: #ffff00;
 }
 
@@ -132,24 +165,29 @@ section {
     line-height: 34px;
 }
 
-#gallup {
-    background-color: #e6f0ff;
+#2Dcode {
+    background: #F3C32E;
     color: #C0C0C0;
 }
 
-#gallup a {
+#2Dcode a {
     color: #000080;
     text-shadow: .5px .5px .5px #ffff00;
 }
 
-#gallup a:hover {
+#2Dcode a:hover {
     color: #ffff00;
     text-shadow: .5px .5px .5px #000080;
 }
 
-#references {
-    background-color: #000080;
+#projects {
+    background: #1AA050;
     color: #e6f0ff;
+}
+
+#innovationTeam {
+    background: #2482C6;
+    color: #e6f0ff;    
 }
 
 .img-circle.reference-pic {
@@ -182,9 +220,9 @@ section {
 }
 
 #contact_info {
-    background: url('img/old-newspaper.jpg') bottom right no-repeat;
+    background: #D5232E;
     background-size: cover;
-    color: #000080;
+    color: #000000;
 }
 
 #contact_info .container {
@@ -200,7 +238,7 @@ section {
 }
 
 #number {
-    color: #000080;
+    color: #000000;
     font-weight: bold;
     font-size: 16px;
     margin-top: -10px;
@@ -243,6 +281,7 @@ blockquote cite {
 
 .center-title {
     text-align: center;
+    color: #000000;
 }
 
 .col-sm-2 {

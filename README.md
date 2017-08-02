@@ -10,6 +10,7 @@ dimensions in the browser. By first working through built in lessons with
 <a href="http://wintercoding.com/vitruvia_New/main.html#concepts/1/1">Vitruvia</a> and then applying
 what you've learned and your own creativity in
 <a href="https://bricklayer-lite.appspot.com/static/index.html" target="_blank">Bricklayer-Lite.</a>
+Begin with Level 1 and move up at a comfortable pace. 
 
 <strong>Coding with Bricklayer</strong></br>
 Bricklayer expands on what you learned and used in Vitruvia and Bricklayer-Lite. 
@@ -38,4 +39,4 @@ here</a> or 3D printed, steps are outlined in the documentation for Level 4 belo
 
 <a href="https://bricklayerdotorg.wordpress.com/level-4-document/" target="_blank">Documentation for Level 4:</a> Functions in 3D, how to show in LDD, LDraw, and for 3D prints (.stl files)
 
-<a href="https://bricklayerdotorg.wordpress.com/level-5-document/" target="_blank">Documentation for Level 5:</a> Functions for traversing with the space 
+<a href="https://bricklayerdotorg.wordpress.com/level-5-document/" target="_blank">Documentation for Level 5:</a> Functions for traversing within the space 
