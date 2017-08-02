@@ -27,7 +27,7 @@ section {
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     text-shadow: 1px 1px 1px #666;
 }
 
@@ -114,10 +114,6 @@ section {
     color: #ffff00;
 }
 
-#myProjectList {
-    font-size: 18px;
-}
-
 #browserCode {
     background: #2482C6;
     color: #000080;
@@ -156,26 +152,26 @@ section {
 }
 
 .eduHeadings {
-    color: #ffff00 ;
+    color: #ffff00;
+    text-align: center;
 }
 
-#strength-title {
-    color: #fff;
+#twoThreeDcode {
     text-shadow: none;
     line-height: 34px;
 }
 
-#2Dcode {
+#twoDcode {
     background: #F3C32E;
-    color: #C0C0C0;
+    color: #000000;
 }
 
-#2Dcode a {
-    color: #000080;
+#twoDcode a {
+    color: white;
     text-shadow: .5px .5px .5px #ffff00;
 }
 
-#2Dcode a:hover {
+#twoDcode a:hover {
     color: #ffff00;
     text-shadow: .5px .5px .5px #000080;
 }
@@ -244,27 +240,6 @@ section {
     margin-top: -10px;
 }
 
-blockquote {
-    border: none;
-    margin: 0;
-    font-family: Georgia, Times, serif;
-    font-style: italic;
-    font-size: 24px;
-    color: navy;
-} 
-
-blockquote cite {
-    display: block;
-    text-align: right;
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000080;
-    text-shadow: 1px 1px 1px #fff;
-    margin-top: 20px;
-}
 
 #clickForMore {
     text-transform: capitalize;
@@ -272,11 +247,15 @@ blockquote cite {
     font-style: italic;
     
 }
+
 .aboutHeader {
     color: navy;
+    text-decoration: underline;
 }
+
 .aboutHeadings {
     text-decoration: underline;
+
 }
 
 .center-title {
