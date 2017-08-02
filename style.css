@@ -114,9 +114,14 @@ section {
     color: #ffff00;
 }
 
+.hiddenDetails {
+    text-align: left;
+}
+
 #browserCode {
     background: #2482C6;
     color: #000080;
+    text-align: center;
 }
 
 #browserCode a {
@@ -264,10 +269,6 @@ section {
     color: #ffff00;
     text-decoration: underline;
     font-weight: bold;
-}
-
-.ed-content {
-    text-align: left;
 }
 
 .col-sm-3 {
