@@ -1,4 +1,4 @@
-The code from this folder can be copy and pasted into Bricklayer environment
+The code from the .bl file can be copy and pasted into Bricklayer environment
 and will be rendered in LDraw. If you have Lego Digital Designer installed, but not
 LDraw simply change line 24 of the missingBrick.bl file from
 

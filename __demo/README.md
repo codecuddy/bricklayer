@@ -1,4 +1,4 @@
-The code from this folder can be copy and pasted into Bricklayer environment, 
+The code from the .bl files can be copy and pasted into Bricklayer environment, 
 and adjusted as desired.
 
 

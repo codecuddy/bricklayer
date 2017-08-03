@@ -1,4 +1,4 @@
-The code from this folder can be copy and pasted into Bricklayer environment, 
+The code from the .bl file can be copy and pasted into Bricklayer environment, 
 and adjusted as desired.
 
 The function property x is checking to see if the x value is divisible by 3 
