@@ -233,11 +233,9 @@ section {
 
 .aboutHeader {
     color: navy;
-    text-decoration: underline;
 }
 
 .aboutHeadings {
-    text-decoration: underline;
 
 }
 
@@ -273,6 +271,11 @@ section {
 
 .col-sm-3 {
     padding: 20px 12px;
+}
+
+.caret.caret-up {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
 }
 
 footer {
@@ -360,6 +363,7 @@ and ( max-width: 568px ) {
     .ed-content .collapse {
         text-align: left;
     }
+    
 }
 
 /* iPads (portrait) ----------- */
