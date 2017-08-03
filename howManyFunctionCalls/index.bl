@@ -1,0 +1,24 @@
+open Level_5;
+
+(*Can you make this artifact with:
+    4 function calls?
+    6 function calls? 
+   12 function calls?
+   24 function calls? 
+
+   more? less?
+*)
+
+fun bricks(x,y,z) =
+    (
+        put (2,1,4) RED  (x  ,y,z  );
+        put (2,1,4) EMPTY(x+2,y,z  );
+        put (2,1,4) RED  (x+4,y,z  );
+        put (4,1,2) EMPTY(x+1,y,z+1)
+        
+    );
+
+
+build(10,1,10);
+bricks(0,0,0);
+showLDR "bricks";
