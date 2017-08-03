@@ -1,0 +1,90 @@
+open Level_3;
+
+fun circles(x,z) = 
+    (
+        setOffset2D (128,128);
+        
+        circleXZ 75 YELLOW (0,0);
+        circleXZ 74 GREEN (0,0);
+        circleXZ 73 YELLOW (0,0);
+        circleXZ 72 GREEN (0,0);
+        circleXZ 71 YELLOW (0,0);
+        circleXZ 70 GREEN (0,0);
+        circleXZ 69 YELLOW (0,0);
+        circleXZ 68 GREEN (0,0);
+        circleXZ 67 YELLOW (0,0);
+        circleXZ 66 GREEN (0,0);
+        circleXZ 65 YELLOW (0,0);
+        circleXZ 64 GREEN (0,0);
+        circleXZ 63 YELLOW (0,0);
+        circleXZ 62 GREEN (0,0);
+        circleXZ 61 YELLOW (0,0);
+        circleXZ 60 GREEN (0,0);
+        circleXZ 59 YELLOW (0,0);
+        circleXZ 58 GREEN (0,0);
+        circleXZ 57 YELLOW (0,0);
+        circleXZ 56 GREEN (0,0);
+        circleXZ 55 YELLOW (0,0);
+        circleXZ 54 GREEN (0,0);
+        circleXZ 53 YELLOW (0,0);
+        circleXZ 52 GREEN (0,0);
+        circleXZ 51 YELLOW (0,0);
+        circleXZ 50 YELLOW (0,0);
+        circleXZ 49 GREEN (0,0);
+        circleXZ 48 YELLOW (0,0);
+        circleXZ 47 GREEN (0,0);
+        circleXZ 46 YELLOW (0,0);
+        circleXZ 45 GREEN (0,0);
+        circleXZ 44 YELLOW (0,0);
+        circleXZ 43 GREEN (0,0);
+        circleXZ 42 YELLOW (0,0);
+        circleXZ 41 GREEN (0,0);
+        circleXZ 40 YELLOW (0,0);
+        circleXZ 39 GREEN (0,0);
+        circleXZ 38 YELLOW (0,0);
+        circleXZ 37 GREEN (0,0);
+        circleXZ 36 YELLOW (0,0);
+        circleXZ 35 GREEN (0,0);
+        circleXZ 34 YELLOW (0,0);
+        circleXZ 33 GREEN (0,0);
+        circleXZ 32 YELLOW (0,0);
+        circleXZ 31 GREEN (0,0);
+        circleXZ 30 YELLOW (0,0);
+        circleXZ 29 GREEN (0,0);
+        circleXZ 28 YELLOW (0,0);
+        circleXZ 27 GREEN (0,0);
+        circleXZ 26 YELLOW (0,0);
+        circleXZ 25 GREEN (0,0);
+        circleXZ 24 YELLOW (0,0);
+        circleXZ 23 GREEN (0,0);
+        circleXZ 22 YELLOW (0,0);
+        circleXZ 21 GREEN (0,0);
+        circleXZ 20 YELLOW (0,0);
+        circleXZ 19 GREEN (0,0);
+        circleXZ 18 YELLOW (0,0);
+        circleXZ 17 GREEN (0,0);
+        circleXZ 16 YELLOW (0,0);
+        circleXZ 15 GREEN (0,0);
+        circleXZ 14 YELLOW (0,0);
+        circleXZ 13 GREEN (0,0);
+        circleXZ 12 YELLOW (0,0);
+        circleXZ 11 GREEN (0,0);
+        circleXZ 10 YELLOW (0,0);
+        circleXZ 9 GREEN (0,0);
+        circleXZ 8 YELLOW (0,0);
+        circleXZ 7 GREEN (0,0);
+        circleXZ 6 YELLOW (0,0);
+        circleXZ 5 GREEN (0,0);
+        circleXZ 4 YELLOW (0,0);
+        circleXZ 3 GREEN (0,0);
+        circleXZ 2 YELLOW (0,0);
+        circleXZ 1 GREEN (0,0);
+        circleXZ 0 YELLOW (0,0)
+        
+    );
+
+build2D(256,256);
+
+circles(0,0);
+
+show2D "circles";

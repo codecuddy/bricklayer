@@ -1,0 +1,14 @@
+open Level_3;
+
+fun cross(x,z) = 
+    (
+        put2D (11,11) YELLOW (x,z);
+        put2D (4,11) GREEN (x+3,z);
+        put2D (11,4) GREEN (x, z+3)
+    );
+
+build2D(32,32);
+
+cross(0,0);
+
+show2D "cross";

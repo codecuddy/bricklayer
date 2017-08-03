@@ -1,0 +1,11 @@
+open Level_4;
+
+build (80,32,32);
+
+(* radius thickness height *)
+
+ringX 12 4 8 [GREEN,GREEN,YELLOW] (12,12,12);
+
+hollowSphere 12 12 [BLUE, WHITE, BLUE] (38,12,12);
+
+showLDR "things";

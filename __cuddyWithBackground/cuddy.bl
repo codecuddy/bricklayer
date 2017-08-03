@@ -1,0 +1,55 @@
+open Level_5;
+
+fun background(x,y,z) = 
+    (
+        put (120,6,60) YELLOW (27,0,10)
+    );
+
+fun letterC(x,y,z) =
+    (
+        ringY 10 3 6  [BLUE](x,y,z);
+        put  ( 4,6,9) YELLOW (x+7,y,z-4)
+    );
+
+fun letterU(x,y,z) =
+    (
+        ringY 10 3  6  [BLUE](x   ,y,z   );
+        put  (18,6, 9) YELLOW (x-10,y,z+ 3);
+        put  ( 3,6, 5) BLUE  (x-10,y,z+ 3); 
+        put  ( 3,6,18) BLUE  (x+ 8,y,z-10)
+    );
+
+fun letterD(x,y,z) =
+    (
+        ringY 10 3  6  [BLUE](x  ,y,z   );
+        put  ( 3,6,30) BLUE  (x+8,y,z-10)  
+    );
+
+fun letterY(x,y,z) =
+    (
+        ringY 10 3  6  [BLUE](x   ,y, z  );
+        put  (18,6, 9) YELLOW (x-10,y,z+ 3);
+        put  ( 3,6, 5) BLUE  (x-10,y,z+ 3); 
+        put  ( 3,6,28) BLUE  (x+ 8,y,z-20);
+        ringY 10 3  5  [BLUE](x   ,y,z-20);
+        put  (18,6, 7) YELLOW (x-10,y,z-17)
+    );
+
+
+
+fun name(x,y,z) = 
+    (
+        letterC   (x   ,y,z);
+        letterU   (x+23,y,z);
+        letterD   (x+46,y,z);
+        letterD   (x+69,y,z);
+        letterY   (x+92,y,z)
+    );
+
+   
+
+build(256,10,256);
+
+background(0,0,0);
+name(40,1,42);
+showLDR "cuddy";

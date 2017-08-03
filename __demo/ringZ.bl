@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+ringZ 10 2 10 [CLEARBLUE,CLEARGREEN,CLEARVIOLET] (20,10,0);
+
+show "ring";

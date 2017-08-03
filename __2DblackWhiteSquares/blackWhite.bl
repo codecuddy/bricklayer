@@ -1,0 +1,84 @@
+open Level_3;
+
+fun squares0 b1 b2 side (x,z) = ();
+
+fun squares1 b1 b2 side (x,z) = 
+    let
+        val halfSide = side div 2
+        val nextSide = halfSide - 2
+        val offset = halfSide + 1
+    in
+        put2D (side,side) b1 (x,z);
+
+        squares0 b2 b1 nextSide (x+1, z+offset);
+        squares0 b2 b1 nextSide (x+offset, z+1);
+        squares0 b1 b2 nextSide (x+1, z+1);
+        squares0 b1 b2 nextSide (x+offset, z+offset)
+    end;
+
+fun squares2 b1 b2 side (x,z) = 
+    let
+        val halfSide = side div 2
+        val nextSide = halfSide - 2
+        val offset = halfSide + 1
+    in
+        put2D (side,side) b1 (x,z);
+
+        squares1 b2 b1 nextSide (x+1, z+offset);
+        squares1 b2 b1 nextSide (x+offset, z+1);
+        squares1 b1 b2 nextSide (x+1, z+1);
+        squares1 b1 b2 nextSide (x+offset, z+offset)
+    end;
+
+
+fun squares3 b1 b2 side (x,z) = 
+    let
+        val halfSide = side div 2
+        val nextSide = halfSide - 2
+        val offset = halfSide + 1
+    in
+        put2D (side,side) b1 (x,z);
+
+        squares2 b2 b1 nextSide (x+1, z+offset);
+        squares2 b2 b1 nextSide (x+offset, z+1);
+        squares2 b1 b2 nextSide (x+1, z+1);
+        squares2 b1 b2 nextSide (x+offset, z+offset)
+    end;
+
+
+fun squares4 b1 b2 side (x,z) = 
+    let
+        val halfSide = side div 2
+        val nextSide = halfSide - 2
+        val offset = halfSide + 1
+    in
+        put2D (side,side) b1 (x,z);
+
+        squares3 b2 b1 nextSide (x+1, z+offset);
+        squares3 b2 b1 nextSide (x+offset, z+1);
+        squares3 b1 b2 nextSide (x+1, z+1);
+        squares3 b1 b2 nextSide (x+offset, z+offset)
+    end;
+
+
+fun squares5 b1 b2 side (x,z) = 
+    let
+        val halfSide = side div 2
+        val nextSide = halfSide - 2
+        val offset = halfSide + 1
+    in
+        put2D (side,side) b1 (x,z);
+
+        squares4 b2 b1 nextSide (x+1, z+offset);
+        squares4 b2 b1 nextSide (x+offset, z+1);
+        squares4 b1 b2 nextSide (x+1, z+1);
+        squares4 b1 b2 nextSide (x+offset, z+offset)
+    end;
+
+
+
+build2D(128,128);
+
+squares5 BLACK WHITE 128 (0,0);
+
+show2D "Squares";

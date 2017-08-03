@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+hollowSphere 10 5 [CLEAR,TRANSPARENT,CLEARPINK] (20,20,20);
+
+show "hollowSphere";

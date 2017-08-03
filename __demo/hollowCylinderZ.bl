@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+hollowCylinderZ 10 12 [BLUENOSECONE,LIGHTBLUENOSECONE]       (10,10,10);
+
+show "hollow cylinder";

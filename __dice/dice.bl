@@ -1,0 +1,79 @@
+open Level_5;
+
+
+fun cube(x,y,z) = 
+    (
+        put (15,15,15) BLUE   ( 0, 0, 0);
+        put ( 1, 1, 1) RED ( 0, 0, 0)
+    );
+
+fun one(x,y,z) = 
+    (
+        put ( 3, 2, 3) YELLOW    ( 6, 13, 6)
+    );
+
+fun two(x,y,z) = 
+    (
+        put ( 2, 3, 3) YELLOW    ( 0, 2, 2);
+        put ( 2, 3, 3) YELLOW    ( 0, 10, 10)
+    );
+
+fun three(x,y,z) = 
+    (
+        put ( 3, 3, 2) YELLOW    ( 10, 2, 13);
+        put ( 3, 3, 2) YELLOW    ( 6, 6, 13);
+        put ( 3, 3, 2) YELLOW    ( 2, 10, 13)
+    );
+
+fun four(x,y,z) = 
+    (
+        put ( 3, 3, 2) YELLOW    ( 2, 10, 0);
+        put ( 3, 3, 2) YELLOW    ( 10, 10, 0);
+        put ( 3, 3, 2) YELLOW    ( 2, 2, 0);
+        put ( 3, 3, 2) YELLOW    ( 10, 2, 0)
+    );
+
+fun five(x,y,z) = 
+    (
+        put ( 2, 3, 3) YELLOW    ( 13, 2, 2);
+        put ( 2, 3, 3) YELLOW    ( 13, 10, 2);
+        put ( 2, 3, 3) YELLOW    ( 13, 6, 6);
+        put ( 2, 3, 3) YELLOW    ( 13, 2, 10);
+        put ( 2, 3, 3) YELLOW    ( 13, 10, 10)
+    );
+
+fun six(x,y,z) = 
+    (
+        put ( 3, 2, 3) YELLOW    ( 2, 0, 2);
+        put ( 3, 2, 3) YELLOW    ( 10, 0, 2);
+        put ( 3, 2, 3) YELLOW    ( 2, 0, 6);
+        put ( 3, 2, 3) YELLOW    ( 10, 0, 6);
+        put ( 3, 2, 3) YELLOW    ( 2, 0, 10);
+        put ( 3, 2, 3) YELLOW    ( 10, 0, 10)
+
+    );
+
+
+fun dice(x,y,z) =
+    (
+    cube(0,0,0);
+    one(0,0,0);
+    two(0,0,0);
+    three(0,0,0);
+    four(0,0,0);
+    five(0,0,0);
+    six(0,0,0)
+    );
+
+build(30,30,30);
+dice(0,0,0);
+
+(*show in LDD*)
+show "dice"
+
+(*show in LDraw*)
+(*showLDR "dice"*)
+
+(*show as a .stl file for 3D printing*)
+(*note: change YELLOW to EMPTY before attempting to 3D print*)
+(*showSTL_ASCII "dice"*)

@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+putMultibrick (10,10,10) [GREEN,DARKGREEN,OLIVE,EMPTY,EMPTY,EMPTY] (0,0,0);
+
+show "putMultibrick";

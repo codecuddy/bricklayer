@@ -1,0 +1,8 @@
+open Level_4;
+
+build(32,32,32);
+
+coneX    10 2 [BLUE] (10,10,10);
+coneNegX 10 2 [RED]  (21,10,10);
+
+show "cone";

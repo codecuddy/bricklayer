@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+hollowCylinderY 10 12 [AQUAROUND,PINKROUND]       (10,10,10);
+
+show "hollow cylinder";

@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+ringX 10 5 4 [LIGHTAQUA] (0,20,20);
+
+show "ring";

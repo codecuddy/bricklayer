@@ -1,0 +1,23 @@
+open Level_3;
+
+fun code(x,z) = 
+    (
+        ringXZ 10 3 BLUE (x,z);
+        put2D (4,9) EMPTY (x+7,z-4);
+        
+        setOffset2D (23, 0);
+        ringXZ 10 3 YELLOW (x,z);
+        
+        setOffset2D (46, 0);
+        ringXZ 10 3 GREEN (x,z);
+        put2D (3,30) GREEN (x+8,z-10);        
+
+        setOffset2D (69, 0);
+        ringXZ 10 3 RED (x,z);
+        put2D (4,7) EMPTY (x+7,z-4);
+        put2D (20,3) RED (x-9,z)
+    );
+
+build2D(128,128);
+
+code(40,40);

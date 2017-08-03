@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+ringY 10 2 10 [TITANIUM,SILVER] (20,0,20);
+
+show "ring";

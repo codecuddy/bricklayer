@@ -1,0 +1,19 @@
+open Level_5;
+
+fun blackStripes() = 
+    let 
+        fun property x = x mod 3 = 0;
+
+        fun stripe(x,y,z) = 
+            if property x then BLACK
+            else RED;
+
+    in
+        traverseWithin (0,0,0) (12,1,20) stripe
+    end;
+
+build(24,1,24);
+
+blackStripes();
+
+show "stripes";

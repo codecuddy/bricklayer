@@ -1,0 +1,28 @@
+open Level_3;
+
+fun arch(x,z) = 
+    (
+        put2D (31,34) BLUE (x,z);
+
+        setOffset2D (15,21);
+        ringXZ 9 1 EMPTY (0,0);
+        ringXZ 8 1 EMPTY (0,0);
+        ringXZ 7 1 EMPTY (0,0);
+        ringXZ 6 1 EMPTY (0,0);
+        ringXZ 5 1 EMPTY (0,0);
+        ringXZ 4 1 EMPTY (0,0);
+        ringXZ 3 1 EMPTY (0,0);
+        ringXZ 2 1 EMPTY (0,0);
+        ringXZ 1 1 EMPTY (0,0);
+
+        setOffset2D (0,0);
+        put2D (19,26) EMPTY (x+6,z);
+        put2D (21,24) EMPTY (x+5,z)
+
+    );
+
+build2D(64,64);
+
+arch(0,0);
+
+show2D "arch";

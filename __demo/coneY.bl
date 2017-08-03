@@ -1,0 +1,8 @@
+open Level_4;
+
+build(32,32,32);
+
+coneY    10 2 [CLEARPINK,CLEARVIOLET]   (10,10,10);
+coneNegY 10 2 [CLEARYELLOW,CLEARORANGE] (10,21,10);
+
+show "cone";

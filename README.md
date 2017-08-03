@@ -24,8 +24,8 @@ Objects coded in Bricklayer can also be uploaded into
 Minecraft, and steps to do so can be found <a href="https://bricklayerdotorg.wordpress.com/minecraft-download/" target="_blank">
 here</a> or 3D printed, steps are outlined in the documentation for Level 4 below. 
 
-<strong>Projects</strong>
-Projects, with their code, are in folders that begin with __
+<strong>Projects</strong></br>
+Projects, with their code, are in folders that begin: __[name of project]
 
 </br><strong>Vitruvia Documentation</strong></br>
 

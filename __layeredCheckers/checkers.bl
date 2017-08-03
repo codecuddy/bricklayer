@@ -1,0 +1,34 @@
+open Level_5;
+
+fun isEven(x,z) = (x+z) mod 2 = 0;
+
+fun blackWhite(x,y,z) = if isEven(x,z) then BLACK
+                        else WHITE;
+
+fun whiteBlack(x,y,z) = if isEven(x,z) then WHITE
+                        else BLACK;
+
+fun chessboard () = traverseWithin (0,0,0)
+                                   (100,1,100)
+                                   blackWhite;
+
+fun topChessboard () = traverseWithin (0,1,0)
+                                      (50,1,50)
+                                      blackWhite;
+
+fun innerChessboard () = traverseWithin (0,0,0)
+                                   (25,1,25)
+                                   whiteBlack;
+
+fun outterChessboard () = traverseWithin (0,1,0)
+                                      (75,1,75)
+                                      whiteBlack;
+build (100,2,100);
+
+chessboard();
+outterChessboard();
+topChessboard();
+innerChessboard();
+
+
+showLDR "chessboard";

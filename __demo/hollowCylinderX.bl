@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+hollowCylinderX 10 12 [CLEARYELLOW,CLEARORANGE]       (10,10,10);
+
+show "hollow cylinder";

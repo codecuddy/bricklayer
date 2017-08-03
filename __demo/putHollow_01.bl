@@ -1,0 +1,7 @@
+open Level_4;
+
+build(32,32,32);
+
+putHollow (7,8,9) [DARKBROWN,BROWN,LIGHTBROWN,LIGHTBROWN,LIGHTBROWN] (0,0,0);
+
+show "putHollow";
