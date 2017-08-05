@@ -120,16 +120,24 @@ section {
 
 #browserCode {
     background: #2482C6;
-    color: #000080;
+    color: white;
     text-align: center;
 }
 
 #browserCode a {
-    color:  #0000ff;
+    color:  #ffff00;
 }
 
 #browserCode a:hover {
-    color: #000080;
+    color: #e6f0ff;
+}
+
+.browswerTabs {
+    color: #ffff00;
+}
+
+.browswerTabs a:hover {
+    color: #e6f0ff;
 }
 
 #downloads {
@@ -150,6 +158,10 @@ section {
     color: #ffff00;
 }
 
+.aboutHeader {
+    color: navy;
+}
+
 .ed-icon {
     height: 60px;
     width: 60px;
@@ -161,8 +173,9 @@ section {
     text-align: center;
 }
 
-#twoThreeDcode {
-    text-shadow: none;
+.twoThreeDcode {
+    color: white;
+    text-shadow: 1px 1px 1px navy;
     line-height: 34px;
 }
 
@@ -186,12 +199,18 @@ section {
     color: #e6f0ff;
 }
 
+.projectDescription {
+    color: white;
+}
+
+.projectLinks {
+    color:  yellow;
+}
 
 #innovationTeam {
     background: #2482C6;
     color: #e6f0ff;    
 }
-
 .img-circle.reference-pic {
     width: 160px;
     height: 160px;
@@ -208,12 +227,12 @@ section {
 }
 
 .ref-info {
-    color: #e6f0ff;
+    color: #ffff00;
     text-decoration: underline;
 }
 
 .ref-info:hover {
-    color: #ffff00;
+    color: #e6f0ff;
 }
 
 .img-circle {
@@ -231,14 +250,6 @@ section {
     padding: 40px;
 }
 
-
-.aboutHeader {
-    color: navy;
-}
-
-.aboutHeadings {
-
-}
 
 .center-title {
     text-align: center;
