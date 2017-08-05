@@ -1,78 +1,76 @@
 open Level_5;
 
-
 fun cube(x,y,z) = 
     (
-        put (15,15,15) BLUE   ( 0, 0, 0);
-        put ( 1, 1, 1) RED ( 0, 0, 0)
+        put (15,15,15) BLUE (x, y, z);
+        put ( 1, 1, 1) RED  (x, y, z)
     );
 
 fun one(x,y,z) = 
     (
-        put ( 3, 2, 3) YELLOW    ( 6, 13, 6)
+        put ( 3, 2, 3) YELLOW(x+6, y+13, z+6)
     );
 
 fun two(x,y,z) = 
     (
-        put ( 2, 3, 3) YELLOW    ( 0, 2, 2);
-        put ( 2, 3, 3) YELLOW    ( 0, 10, 10)
+        put ( 2, 3, 3) YELLOW (x, y+ 2, z+ 2);
+        put ( 2, 3, 3) YELLOW (x, y+10, z+10)
     );
 
 fun three(x,y,z) = 
     (
-        put ( 3, 3, 2) YELLOW    ( 10, 2, 13);
-        put ( 3, 3, 2) YELLOW    ( 6, 6, 13);
-        put ( 3, 3, 2) YELLOW    ( 2, 10, 13)
+        put ( 3, 3, 2) YELLOW (x+10,y+ 2,z+13);
+        put ( 3, 3, 2) YELLOW (x+ 6,y+ 6,z+13);
+        put ( 3, 3, 2) YELLOW (x+ 2,y+10,z+13)
     );
 
 fun four(x,y,z) = 
     (
-        put ( 3, 3, 2) YELLOW    ( 2, 10, 0);
-        put ( 3, 3, 2) YELLOW    ( 10, 10, 0);
-        put ( 3, 3, 2) YELLOW    ( 2, 2, 0);
-        put ( 3, 3, 2) YELLOW    ( 10, 2, 0)
+        put ( 3, 3, 2) YELLOW (x+ 2,y+10,z);
+        put ( 3, 3, 2) YELLOW (x+10,y+10,z);
+        put ( 3, 3, 2) YELLOW (x+ 2,y+ 2,z);
+        put ( 3, 3, 2) YELLOW (x+10,y+ 2,z)
     );
 
 fun five(x,y,z) = 
     (
-        put ( 2, 3, 3) YELLOW    ( 13, 2, 2);
-        put ( 2, 3, 3) YELLOW    ( 13, 10, 2);
-        put ( 2, 3, 3) YELLOW    ( 13, 6, 6);
-        put ( 2, 3, 3) YELLOW    ( 13, 2, 10);
-        put ( 2, 3, 3) YELLOW    ( 13, 10, 10)
+        put ( 2, 3, 3) YELLOW (x+13,y+ 2,z+ 2);
+        put ( 2, 3, 3) YELLOW (x+13,y+10,z+ 2);
+        put ( 2, 3, 3) YELLOW (x+13,y+ 6,z+ 6);
+        put ( 2, 3, 3) YELLOW (x+13,y+ 2,z+10);
+        put ( 2, 3, 3) YELLOW (x+13,y+10,z+10)
     );
 
 fun six(x,y,z) = 
     (
-        put ( 3, 2, 3) YELLOW    ( 2, 0, 2);
-        put ( 3, 2, 3) YELLOW    ( 10, 0, 2);
-        put ( 3, 2, 3) YELLOW    ( 2, 0, 6);
-        put ( 3, 2, 3) YELLOW    ( 10, 0, 6);
-        put ( 3, 2, 3) YELLOW    ( 2, 0, 10);
-        put ( 3, 2, 3) YELLOW    ( 10, 0, 10)
+        put ( 3, 2, 3) YELLOW (x+ 2,y,z+ 2);
+        put ( 3, 2, 3) YELLOW (x+10,y,z+ 2);
+        put ( 3, 2, 3) YELLOW (x+ 2,y,z+ 6);
+        put ( 3, 2, 3) YELLOW (x+10,y,z+ 6);
+        put ( 3, 2, 3) YELLOW (x+ 2,y,z+10);
+        put ( 3, 2, 3) YELLOW (x+10,y,z+10)
 
     );
 
-
 fun dice(x,y,z) =
     (
-    cube(0,0,0);
-    one(0,0,0);
-    two(0,0,0);
-    three(0,0,0);
-    four(0,0,0);
-    five(0,0,0);
-    six(0,0,0)
+        cube (x,y,z);
+        one  (x,y,z);
+        two  (x,y,z);
+        three(x,y,z);
+        four (x,y,z);
+        five (x,y,z);
+        six  (x,y,z)
     );
 
 build(30,30,30);
 dice(0,0,0);
 
-(*show in LDD*)
-show "dice"
-
 (*show in LDraw*)
-(*showLDR "dice"*)
+showLDR "dice"
+
+(*show in LDD*)
+(*show "dice"*)
 
 (*show as a .stl file for 3D printing*)
 (*note: change YELLOW to EMPTY before attempting to 3D print*)
