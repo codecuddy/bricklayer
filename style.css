@@ -332,6 +332,11 @@ and ( max-width: 568px ) {
         font-size: 30px;
     }
     
+    .aboutHeader {
+        text-align: center;
+        margin: auto;
+    }
+    
     #doSpaceIcon {
         width: 180px;
         height: 60px;
