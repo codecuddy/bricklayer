@@ -4,12 +4,12 @@ val yard = 1;
 
 fun pyramidsOnEastTowers(xStart,yStart,zStart) = 
     (
-        put (yard*11,yard ,yard*8) SILVER (xStart+0 ,yStart+0 , zStart+0 );
-        put (yard* 9,yard ,yard*6) SILVER (xStart+1 ,yStart+1 , zStart+1 );
-        put (yard* 7,yard ,yard*4) SILVER (xStart+2 ,yStart+2 , zStart+2 );
-        put (yard* 5,yard ,yard*2) SILVER (xStart+3 ,yStart+3 , zStart+3 );
-        put (yard* 3,yard ,yard*2) SILVER (xStart+4 ,yStart+4 , zStart+3 );
-        put (yard* 1,yard ,yard*2) SILVER (xStart+5 ,yStart+5 , zStart+3 );
+        put (yard*11, yard ,yard*11) SILVER (xStart+0 ,yStart+0 , zStart+0 );
+        put (yard* 9, yard ,yard* 9) GRAY (xStart+1 ,yStart+1 , zStart+1 );
+        put (yard* 7, yard ,yard* 7) BLACK (xStart+2 ,yStart+2 , zStart+2 );
+        put (yard* 5, yard ,yard* 5) SILVER (xStart+3 ,yStart+3 , zStart+3 );
+        put (yard* 3, yard ,yard* 3) GRAY (xStart+4 ,yStart+4 , zStart+4 );
+        put (yard* 1, yard ,yard* 1) BLACK (xStart+5 ,yStart+5 , zStart+5 );
 
         put (1,1,1) RED (0,0,0)
 

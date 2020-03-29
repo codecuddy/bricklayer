@@ -4362,4 +4362,4 @@ westStadium(75,1,0);
 eastStadium(75,1,0);
 additionalStadium(75,1,0);
 
-showLDR "tom osborne field"
+show "tom osborne field"

@@ -1,0 +1,91 @@
+
+open Level_4;
+(* ============================================================================================================ *) 
+
+fun grassCube (p as (x,y,z)) = 
+    (
+        Monitor.showPoint p;
+        putMultibrick (10,10,10) [BROWN, LIGHTBROWN, DARKBROWN] p;   
+        putMultibrick (10,1,10) [GREEN,DARKGREEN,LIGHTGREEN] (x,y+9,z);
+        putMultibrick (10,2,10) [GREEN,GREEN,GREEN,DARKGREEN,LIGHTGREEN,BROWN, LIGHTBROWN, DARKBROWN] (x,y+7,z)
+    );
+
+fun tileGrass x z =
+    let
+        fun grass p = ( (* Monitor.showPoint p; *)
+        
+                        putMultibrick (10,1,10) [GREEN,GREEN,DARKGREEN,LIGHTGREEN] p
+                      )
+        
+        fun row _ ~1 = ()
+          | row x z  = (
+                            grass (x*10,0,z*10);
+                            row x (z-1)
+                        )
+                          
+        fun column ~1 = ()
+          | column x  = (
+                            row x (z-1);
+                            column (x-1)
+                        )
+    in
+        column (x-1)
+    end;
+
+fun birchTree() = 
+    (
+        putHollowcube 10 [WHITE,WHITE,WHITE,BLACK] (30,0,30);   
+        putHollowcube 10 [WHITE,WHITE,WHITE,BLACK] (30,10,30);   
+        putHollowcube 10 [WHITE,WHITE,WHITE,BLACK] (30,20,30); 
+                      
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (20,20,20);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (20,20,30);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (20,20,40);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (30,20,20);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (30,20,30);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (30,20,40);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (40,20,20);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (40,20,30);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (40,20,40);   
+                      
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (30,30,30);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (40,30,40); 
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (40,30,30); 
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (20,30,30);   
+        putHollowcube 10 [GREEN, EMPTY, EMPTY, EMPTY, EMPTY, DARKGREEN] (30,30,20)  
+    );
+    
+(* ============================================================================================================ *)     
+build(70,70,70); 
+
+
+setOverwrite false;
+
+birchTree();
+
+tileGrass 7 7;
+
+setOverwrite true;
+
+grassCube(0,0,60);
+grassCube(0,0,50);
+grassCube(10,0,60);
+grassCube(20,0,60);
+
+grassCube(0,10,60);
+
+show "Minecraft Birch";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

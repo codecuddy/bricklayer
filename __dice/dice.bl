@@ -67,10 +67,10 @@ build(30,30,30);
 dice(0,0,0);
 
 (*show in LDraw*)
-showLDR "dice"
+(*showLDR "dice"*)
 
 (*show in LDD*)
-(*show "dice"*)
+show "dice"
 
 (*show as a .stl file for 3D printing*)
 (*note: change YELLOW to EMPTY before attempting to 3D print*)
