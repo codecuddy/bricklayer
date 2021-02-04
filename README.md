@@ -24,6 +24,8 @@ Objects coded in Bricklayer can also be uploaded into
 Minecraft, and steps to do so can be found <a href="https://bricklayerdotorg.wordpress.com/minecraft-download/" target="_blank">
 here</a> or 3D printed, steps are outlined in the documentation for Level 4 below. 
 
+You can follow along with examples I used in my classroom - <a href="https://codecuddy.github.io/bricklayer/" target="_blank">here</a>. Please do not hesitate to reach out for more information, or access to slide decks. 
+
 <strong>Projects</strong></br>
 Projects, with their code, are in folders that begin: __[name of project]
 
